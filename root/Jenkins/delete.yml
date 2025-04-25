@@ -1,0 +1,6 @@
+# syntax: conjur policy update -b root -f delete.yml
+
+- !delete
+  record: !policy jenkins  
+
+

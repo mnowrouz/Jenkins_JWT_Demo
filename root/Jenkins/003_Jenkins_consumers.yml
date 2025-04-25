@@ -1,0 +1,7 @@
+#Adding Jenkins host to consumers group for demo purposes
+#load syntax:
+#conjur policy load -b Vault/app1/Jenkins_Demo_Automation/delegation -f jenkins_consumers.yml
+
+- !grant
+  role: !group consumers
+  member: !host /jenkins/demo/Secure_Pipeline

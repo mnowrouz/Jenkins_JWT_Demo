@@ -21,10 +21,10 @@ pipeline {
      /   \\     Never hardcode secrets...
      
      
-     ...ever ;(
+     ...forreal tho ;(
 """
 
-                        echo "Logging in as '${username}' with password: (shhh... it's a secret) 🔓"
+                        echo "Logging in as '${username}' with password: '${password}'"
 
                         if (password == "Cyberark1") {               // Keeping this here to prove the masked secret = Cyberark1
                             echo "Access granted. Welcome to the vault 👑 lol"

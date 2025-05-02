@@ -5,11 +5,11 @@ pipeline {
         stage('Top Secret Login') {
             steps {
                 script {
-                    // 🤫 Super confidential credentials – do NOT share (unless it's in a Jenkins log)
+                    // Super confidential credentials – do NOT share (unless it's in a Jenkins log)
                     def username = "admin"
                     def password = "Cyberark1" // nothing says "secure" like hardcoding secrets
 
-                    // 🚨 Printing sensitive info directly to the logs because we trust everyone here
+                    // Printing sensitive info directly to the logs because we trust everyone here
                     echo """
         _  
      __|_|__                

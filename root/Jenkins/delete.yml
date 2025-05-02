@@ -1,8 +1,0 @@
-# syntax: conjur policy update -b root -f delete.yml
-
-- !delete
-  record: !policy conjur/authn-jwt/jenkins
-   # !policy jenkins
-   # !policy conjur/authn-jwt/jenkins
-
-
